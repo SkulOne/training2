@@ -1,0 +1,674 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    height: 100vh;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url(assets/fonts/Lato-Medium.ttf);
+}
+
+body {
+    font-family: Lato;    
+    line-height: 160%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 345px;
+}
+
+.section-content {
+    width: 1228px;
+}
+
+.button-orange-background{
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); 
+    color: #FFFFFF;
+    border-radius: 4px;
+    border-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); 
+    border-image-slice: 1;
+}
+
+.button-white-background{
+    background: none;
+    color:  #F86300;
+    border-radius: 4px;
+    border-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); 
+    border-image-slice: 1;    
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    
+}
+.home-page-background {
+    background-image: url(assets/photo/Фон.jpg);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 36px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 432px;
+    font-weight: 700;
+}
+
+.buttons-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 386px;
+    height: 52px;
+}
+
+.button-consultation button{ 
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 52px;
+    padding: 0 40px;
+}
+
+.button-entrance { /* в таких местах я могу ширину задавать 4тобы Just Работал? */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 155px;
+}
+
+.button-entrance button {
+    background: none;
+    border: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.content-home-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.studying-with-course {
+    display: flex;
+    flex-direction: column;
+}
+
+.play-video {
+    display: flex;
+    align-items: center;
+    margin-top: 156px;
+    font-weight: 700;
+}
+
+.play-video-button {
+    border-radius: 202px;
+    border: 0px;
+    background-image: none;
+}
+
+h1 {
+    display: flex;
+    align-items: flex-start;
+    width: 500px;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 130%;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+
+.buttons-home-page {
+    display: flex;
+   
+}
+
+.buttons-home-page button { /* под общие кнопки сделать */
+    padding: 0 40px;
+    border: 2px solid transparent;
+    border-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); 
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 259px;
+    border-image-slice: 1;
+
+}
+
+.about-us-button {
+    background: #ffdad5;
+    color:  #F86300;
+    width: 161px;
+    height: 52px;
+}
+
+.explore-courses-button {
+    margin-left: 24px;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); 
+    color: #FFFFFF;
+    width: 209px;
+    height: 52px;
+}
+
+.image-home-page {
+    position: relative;
+    width: 602px;
+    height: 551px;
+}
+
+.statistics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.statistics :first-child :nth-of-type(1) {
+    list-style-type: none;
+}
+
+.statistics-in-numbers {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statistics-in-numbers:not(:last-child) {
+    margin-right: 60px; 
+}
+
+
+.statistics-in-numbers ::marker {
+    color: #FF3F3A;
+    font-size: 35px;
+}
+
+.statistics-number {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+}
+
+
+.statistics-number-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    margin-left: 12px;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    
+}
+
+.courses-image-girl-course {
+    position: static;
+    width: 705px;
+    height: 560px;
+    border-radius: 4px;
+}
+
+.who-we-are {
+    display: flex;
+    flex-direction: column;
+    margin-left: 135px;
+}
+
+.heading-courses {
+    display: flex;
+    flex-direction: row;
+}
+
+.ask {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.proposal {
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 130%;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.list-of-advantages :not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.list-of-advantages li{
+    position: relative;
+    list-style: none;
+    width: 358px;
+    margin-left: 32px;
+}
+
+.list-of-advantages ul ::before{
+    display: inline-block;
+    content:'';
+    background: url(assets/icons/photo_2022-06-28_13-56-36.jpg);
+    width: 15px;
+    height: 14px;
+    background-size: contain;
+    position: absolute;
+    left: -29px;
+    right: 0%;
+    top: 8.17%;
+    bottom: 4.16%;
+}
+
+.button-more-about-us {
+    margin-top: 48px;
+    padding: 0 32px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 44px;
+    width: 164px; 
+    height: 44px;
+}
+
+.container-list-of-courses-offered {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+.ready-to-learn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+}
+
+.courses-button {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.all-courses-button {
+    margin-bottom: 60px;
+    width: 203px;
+    height: 52px; /* 2 */
+}
+
+.the-line-of-courses{
+    display: grid;
+    gap: 30px;
+    
+}
+
+.list-of-courses-offered {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-of-courses {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-courses {
+    width: 214px;
+    border-radius: 4px 0 0 4px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding:  33px 32px 32px;
+    border: 1px solid #E5E8ED;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.08), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 4px 4px -4px rgba(30, 33, 44, 0.03);
+    transition: .5s;
+
+}
+
+.card-content:hover {/* прочитать */
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+
+.card-content :not(:last-child) {
+    margin-bottom: 21px;
+}
+
+.badge {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    padding: 1px 8px;
+    border-radius: 4px;
+    height: 21px;
+    color: #FFFFFF;
+}
+
+.marketing {
+    width: 64px;
+    background-color: #03CEA4;
+}
+
+.hr-recruting {
+    width: 96px; 
+    background-color: #F89828;
+}
+
+.management {
+    width: 82px;
+    background: #5A87FC; 
+}
+
+.design {
+    width: 43px;
+    background: #F52F6E;
+}
+
+.badge-description {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    width: 321px;
+    height: 60px;
+}
+
+.info-price {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #FF4242;
+}
+
+.speaker {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #787A80;
+}
+
+.content-our-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    padding-bottom: 140px;
+}
+
+.buttons-our-benefits {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-our-benefits {
+    background: none;
+    color: #9A9CA5;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 160%;
+    padding: 10px 73px 10px 71px;
+}
+
+.container-buttons-our-benefits button:hover{
+    background: none;
+    border: 1px solid;
+    color:  #F86300;
+    border-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); 
+    border-image-slice: 1; 
+}
+
+.container-information-our-benefits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 90px;
+    width: 100%;
+}
+
+.container-information-our-benefits img {
+    position: relative;
+    width: 600px;
+    height: 440px;
+}
+
+.information-our-benefits {
+    display: flex;
+    flex-direction: column;
+    width: 504px;
+    height: 42px;
+    padding-bottom: 135px;
+}
+
+.information-our-benefits :first-child{
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 130%;
+    margin-bottom: 24px;
+}
+
+.information-our-benefits :last-child {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    text-align: start;
+}
+
+.container-our-events {
+    background-image: url(assets/photo/background-our-events.jpg);
+    padding-bottom: 80px;
+}
+
+.our-events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+.our-events-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-event {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.schedule-our-events {
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 32px 40px;
+    border-radius: 4px;
+}
+
+.schedule-our-events:not(:last-child) { /* по4ему с first child не работает?!?!?!!?!?!? */
+    margin-bottom: 24px;
+}
+
+.schedule-our-events:hover {
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 80px 80px -20px rgba(255, 63, 58, 0.16), 0px 30px 24px -10px rgba(255, 63, 58, 0.1), 0px 12px 10px -6px rgba(255, 63, 58, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
+}
+
+.schedule-our-events:hover .event-button {
+    cursor: pointer;
+    transition: 1s;
+    background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); 
+    color: #FFFFFF;
+    border-radius: 4px;
+    border-image: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%); 
+    border-image-slice: 1;
+}
+
+.date-of-the-month {
+    display: flex;
+    align-items: center;
+    color: #FF3F3A;
+    width: 57px;
+    height: 62px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 130%;
+}
+
+.container-month-time {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 42px;
+}
+
+.month {
+    margin-bottom: 4px;
+    width: 100px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%
+}
+
+.time {
+    width: 100px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #787A80;
+}
+
+.event {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+
+.event-info {
+    width: 757px;
+    height: 30px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.division {
+    width: 135px;
+    height: 26px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+}
+
+.event-button {
+    margin-left: 40px;
+    height: 44px;
+    padding: 0px 32px; /* white backgroun button -> border-image не дает работать border-radius */
+}
+
+.all-events {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    justify-content: space-evenly;
+    width: 550px;
+}
+
+.all-events span {
+    height: 42px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+}
+
+.all-events-button {
+    height: 52px;
+    padding: 0px 40px;
+}
+
+.conteiner-issuance-of-certificates {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 0 120px 0;
+}
+
+.issuance-of-certificates-info {
+    display: flex;
+    flex-direction: column;
+    width: 392px;
+}
+
+.issuance-of-certificates-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.issuance-of-certificates-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-logo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+
+.meet-our-team {
+    background-image: url(assets/photo/background-meet-our-team.jpg);
+}
+
+.conteiner-meet-our-team {
+    display: flex;
+    flex-direction: column;
+}
